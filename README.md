@@ -1,6 +1,6 @@
-# Go Template
+# Home Loans Project
 
-Simple Go project template
+This project is about home loans application of a bank so that customers can apply for loans online, then officers can check the submission file and accept or reject the application.
 
 ## Prerequisite
 
