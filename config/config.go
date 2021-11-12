@@ -37,7 +37,7 @@ func Init() *Config {
 
 	appConfig := &Config{
 		AppName:        GetString("APP_NAME"),
-		AppPort:        GetInt("APP_PORT"),
+		AppPort:        GetInt("PORT"),
 		LogLevel:       GetString("LOG_LEVEL"),
 		Environment:    GetString("ENVIRONMENT"),
 		JWTSecret:      GetString("JWT_SECRET"),
