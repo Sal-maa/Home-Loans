@@ -7,7 +7,7 @@ on:
 
 env:
     JWT_SECRET: ${{ secrets.JWT_SECRET }}
-    REDIS_ADDRESS: ${{ secrets.REDIS_ADDRESS }}
+    # REDIS_ADDRESS: ${{ secrets.REDIS_ADDRESS }}
     DB_USERNAME: ${{ secrets.DB_USERNAME }}
     DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
     DB_HOST: ${{ secrets.DB_HOST }}
