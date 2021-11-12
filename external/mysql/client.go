@@ -3,8 +3,9 @@ package mysql
 import (
 	"fmt"
 
+	"github.com/lib/pq"
 	log "github.com/sirupsen/logrus"
-	"gorm.io/driver/mysql"
+	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
 
@@ -26,20 +27,23 @@ func (c *client) Ping() error {
 }
 
 func NewMysqlClient(config ClientConfig) *client {
-	connStr := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True&loc=Local",
+	connStr := fmt.Sprintf("postgres://%s:%s@%s/%s",
 		config.Username,
 		config.Password,
 		config.Host,
-		config.Port,
 		config.DBName,
 	)
-	dbConn, err := gorm.Open(mysql.Open(connStr), &gorm.Config{
+	pgUrl, err := pq.ParseURL(connStr)
+	if err != nil {
+		log.Fatal(err)
+	}
+	dbConn, err := gorm.Open(postgres.Open(pgUrl), &gorm.Config{
 		SkipDefaultTransaction:                   true,
 		PrepareStmt:                              true,
 		DisableForeignKeyConstraintWhenMigrating: true,
 	})
 	if err != nil {
-		log.Fatalf("unable to initiate mysql connection. %v", err)
+		log.Fatalf("unable to initiate elephantsql connection. %v", err)
 	}
 	return &client{
 		DbConnection: dbConn,
