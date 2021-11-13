@@ -1,1 +1,1 @@
-web: .bin/go-template/
+web: .bin/go-template
