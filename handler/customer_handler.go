@@ -41,7 +41,7 @@ func CreateIdentity(customerService service.CustomerServiceInterface) http.Handl
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -86,7 +86,7 @@ func CreateSubmission(customerService service.CustomerServiceInterface) http.Han
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -125,7 +125,7 @@ func GetSubmissionCustomer(customerService service.CustomerServiceInterface) htt
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -156,7 +156,7 @@ func GetSubmissionStatus(customerService service.CustomerServiceInterface) http.
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -181,7 +181,7 @@ func UploadFileKtp(customerService service.CustomerServiceInterface) http.Handle
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -222,7 +222,7 @@ func UploadFileGaji(customerService service.CustomerServiceInterface) http.Handl
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -263,7 +263,7 @@ func UploadFilePendukung(customerService service.CustomerServiceInterface) http.
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -304,7 +304,7 @@ func GetFileKtpCustomer(customerService service.CustomerServiceInterface) http.H
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -349,7 +349,7 @@ func GetFileBuktiGajiCustomer(customerService service.CustomerServiceInterface) 
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -394,7 +394,7 @@ func GetFilePendukungCustomer(customerService service.CustomerServiceInterface) 
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -438,7 +438,7 @@ func GetIdentityCustomer(customerService service.CustomerServiceInterface) http.
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)

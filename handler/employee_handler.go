@@ -20,7 +20,7 @@ func GetListSubmission(employeeService service.EmployeeServiceInterface) http.Ha
 
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -65,7 +65,7 @@ func GetNumberOfPage(employeeService service.EmployeeServiceInterface) http.Hand
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -99,7 +99,7 @@ func GetListByName(employeeService service.EmployeeServiceInterface) http.Handle
 		name := vars["name"]
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -136,7 +136,7 @@ func GetSubmissionEmployee(employeeService service.EmployeeServiceInterface) htt
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -236,9 +236,9 @@ func PostIdentityStatus(petugasService service.EmployeeServiceInterface) http.Ha
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
-		w.Header().Set("Access-Control-Allow-Methods", "*")
-		w.Header().Set("Access-Control-Allow-Headers", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Methods", "*")
+		// w.Header().Set("Access-Control-Allow-Headers", "*")
 
 		// header := w.Header()
 		// header.Add("Access-Control-Allow-Origin", "*")
@@ -295,7 +295,7 @@ func GetFileKtpEmployee(employeeService service.EmployeeServiceInterface) http.H
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -339,7 +339,7 @@ func GetFileBuktiGajiEmployee(employeeService service.EmployeeServiceInterface) 
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -384,7 +384,7 @@ func GetFilePendukungEmployee(employeeService service.EmployeeServiceInterface) 
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -428,7 +428,7 @@ func GetIdentityEmployee(employeeService service.EmployeeServiceInterface) http.
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -476,7 +476,7 @@ func TotalIdentityUnconfirmed(employeeService service.EmployeeServiceInterface) 
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -508,7 +508,7 @@ func DownloadReport(employeeService service.EmployeeServiceInterface) http.Handl
 	return func(w http.ResponseWriter, r *http.Request) {
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
@@ -557,7 +557,7 @@ func GetListSubmissionParam(employeeService service.EmployeeServiceInterface) ht
 
 		tokenC, err := contract.NewValidateTokenRequestViaCookie(r)
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		// w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		if err != nil {
 			log.Warning(err)
