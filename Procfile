@@ -1,1 +1,1 @@
-web: ./bin/home-loans-project/
+web: ./bin/github.com/rysmaadit/go-template/
