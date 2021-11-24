@@ -2,6 +2,9 @@
 
 This project is about home loans application of a bank so that customers can apply for loans online, then officers can check the submission file and accept or reject the application.
 
+Please Checkout our project in https://home-loans-project.herokuapp.com
+and get postman collection in https://www.getpostman.com/collections/4220987cfcd3d1365094
+
 ## Prerequisite
 
 To run this program, you will need
